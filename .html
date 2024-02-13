@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Halo cuy</h1>
+        <button class="button" onclick="openNewTab()">Tolong Tekan Ini</button>
+    </div>
+
+    <script>
+        function openNewTab() {
+            var newTab = window.open('', '_blank');
+            var htmlContent = `
+                <html>
+                <head>
+                    <title>by rio!</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                            background-color: #f0f0f0;
+                        }
+                        .container {
+                            margin-top: 50px;
+                        }
+                        .flower {
+                            width: 300px;
+                            height: auto;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <img src="https://th.bing.com/th/id/OIP.A0GeDvsCicDun3wucjuXPAAAAA?w=222&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                        <h1>hai,sebenere tadi mau buat bunga tapi mager<br> 
+                            yaudah gini aja btw ini cuma testing</h1>
+                    </div>
+                </body>
+                </html>
+            `;
+            newTab.document.write(htmlContent);
+            newTab.document.close();
+        }
+    </script>
+</body>
+</html>
